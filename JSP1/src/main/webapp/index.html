@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSP 기초</title>
+</head>
+<body>
+  <h1>EL / JSTL</h1>
+  <!--
+    클라이언트가 서버로 요청을 하는 방법
+
+    1) form 제출 (GET/POST)
+    2) a 태그 (GET)
+    3) JS - location.href = "주소"; (GET)
+    4) JS - Ajax (GET/POST/PUT/DELETE)
+  -->
+  <a href="/el_jstl">EL / JSTL 사용 해보기</a>
+  
+  <hr><hr>
+
+  <h2>회원 가입</h2>
+  <form action="/signUp" method="post">
+    <table style="text-align:left;">
+      <tr>
+        <th>아이디 : </th>
+        <td><input type="text" name="inputId" required></td>
+      </tr>
+      <tr>
+        <th>비밀번호 : </th>
+        <td><input type="password" name="inputPw" required></td>
+      </tr>
+      <tr>
+        <th>비밀번호 확인 : </th>
+        <td><input type="password" name="inputPw2" required></td>
+      </tr>
+      <tr>
+        <th>이름 : </th>
+        <td><input type="text" name="inputName" required></td>
+      </tr>
+      <tr>
+        <th>나이 :</th>
+        <td><input type="number" name="inputAge" required></td>
+      </tr>
+      <tr>
+      	<th></th>
+      	<td><button>회원 가입</button></td>
+      </tr>
+    </table>
+    <!-- 아이디 : <input type="text" name="inputId" required> <br>
+    비밀번호 : <input type="password" name="inputPw" required> <br>
+    비밀번호 확인 : <input type="password" name="inputPw2" required> <br>
+    이름 : <input type="text" name="inputName" required> <br>
+    나이 : <input type="number" name="inputAge" required> <br>
+    <button>회원 가입</button> -->
+  </form>
+</body>
+</html>
