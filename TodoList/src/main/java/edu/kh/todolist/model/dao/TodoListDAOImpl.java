@@ -85,5 +85,23 @@ public class TodoListDAOImpl implements TodoListDAO{
 	}
 
 
+	@Override
+	public Todo todoDetailView(int index) {
+		
+		// 전달받은 key(index)와 일치하는 데이터를 todoList 찾아서 리턴
+		// -> 실제로는 전달받은 key(index)와 일치하는 데이터를 DB에서
+		//    상세조회해와서 리턴.
+		
+		// index -> 20
+		// TodoList 범위 초과 시 null 반환
+		
+		if(index < 0 || index > todoList.size()) 
+			return null;
+		
+		return todoList.get(index);
+		
+	}
+
+
 
 }

@@ -18,7 +18,7 @@
 
   <div class="btn-container">
     <div>
-      <button id="goToList">목록으로</button>
+      <button type="button" id="goToList">목록으로</button>
     </div>
     
   </div>
